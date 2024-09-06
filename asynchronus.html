@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronus</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+
+        // setTimeout(myfunction, 1000);
+
+        // function myfunction() {
+        //     let d = new Date()
+
+        //     document.getElementById("demo").innerHTML = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds()
+
+        // }
+
+        // --------------------------------------------------------------
+
+        // let promise = new Promise(function (resolve, reject) {
+        //     const x = "Javascript"
+        //     const y = "javascript"
+
+        //     if (x === y) {
+        //         resolve()
+        //     }
+        //     else {
+        //         reject()
+        //     }
+
+        // })
+        // promise
+        //     .then(function () {
+        //         document.write("successfull")
+        //     })
+
+        //     .catch(function () {
+        //         document.write("some error has occured")
+        //     })
+
+        // --------------------------------------------------------------
+
+        // const getdata = async () => {
+        //     let data = "Hello World..."
+        //     return data
+        // }
+
+        // getdata().then(data => console.log(data));
+
+        // --------------------------------------------------------------
+
+        async function msg() {
+            let promise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("done !"), 3000)
+            })
+            let result = await promise;
+            alert(result)
+        }
+        msg()
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
