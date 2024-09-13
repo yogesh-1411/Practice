@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function_Method</title>
+</head>
+
+<body>
+
+    <script>
+
+        const person = {
+            fullname: function (city, country) {
+                return this.firstname + this.lastname + city + country
+            }
+        }
+
+        const person1 = {
+            firstname: " john ",
+            lastname: " shinde "
+        }
+
+        const person2 = {
+            firstname: " max ",
+            lastname: " jadhav "
+        }
+
+        document.write(person.fullname.apply(person1, ["mumbai, ", "india"]))
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
