@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+
+    <script>
+
+        // function functionName(){
+        //       // block of code
+        // }
+        // functionName()
+
+        // 1. defination
+        // 2. declaration
+        // 3. calling
+
+        // --------------------------------------------------------------
+
+        // let b = "this is global var"
+        // function msg() {
+        //     let a = "this is local var"
+        //     document.write(a + "<br>")
+        //     document.write(b + "<br>")
+        // }
+        // msg()
+        // //document.write(a)
+        // document.write(b)
+
+        // --------------------------------------------------------------
+
+        // function total(a, b, c, d) {
+        //     document.write(c+d)
+        // }
+        // total(2, 6, 8, 3)
+
+        // --------------------------------------------------------------
+
+        // let appa = [5672, 5485, 5014, 5965, 4694]
+        // let anna = [3662, 3536, 3958, 3147, 5856]
+
+        // function total() {
+        //     let count = 0
+        //     for (let a = 0; a < arguments.length; a++) {
+        //         count += arguments[a]
+        //         document.write("Total : " + arguments[a] + "<br>")
+        //     }
+
+        // }
+        // total(appa)
+
+        // --------------------------------------------------------------
+
+        // let sushil = [672, 485, 214, 965, 694];
+        // let yogesh = [862, 536, 958, 147, 856];
+        // let rushi = [956, 665, 546, 224, 468];
+
+        // function total() {
+        //     let count = 0;
+        //     for (let a = 0; a < arguments.length; a++) {
+        //         let array = arguments[a];
+        //         for (let b = 0; b < array.length; b++) {
+        //             count += array[b];
+        //         }
+        //     }
+        //     document.write("Total : " + count + "<br>");
+        // }
+
+        // total(yogesh,rushi);
+
+        // --------------------------------------------------------------
+
+        // let sushil = [672, 685, 224, 965, 694];
+        // let yogesh = [862, 536, 258, 147, 856];
+        // let rushi = [956, 665, 546, 224, 468];
+
+        // function total(array) {
+        //     let count = 0;
+        //     for (let i = 0; i < array.length; i++) {
+        //         count += array[i];
+        //     }
+        //     document.write("Total: ", count);
+        // }
+        // total(sushil)
+
+        // --------------------------------------------------------------
+
+        let yogesh = [6352, 6844, 4967, 1937, 2356]
+        let count = 0
+        for (let a = 0; a < yogesh.length; a++) {
+            document.write(yogesh[a] + "<br>")
+            count += yogesh[a]
+
+        }
+        document.write("Total Expenses : " + count)
+
+        // --------------------------------------------------------------
+
+        // function sum(a, b = 30) {
+        //     return a + b
+        // }
+        // let result = sum(20)
+        // document.write(result)
+
+        // --------------------------------------------------------------
+
+        // function sum(...args) {
+        //     let sum = 0
+        //     for (let num of args)
+        //         sum += num
+        //     return sum
+        // }
+        // let x = sum(64, 86, 25, 35, 8, 25, 43, 15)
+        // document.write(x)
+
+        // --------------------------------------------------------------
+
+        // let msg = (a, b) => {
+        //     document.write(a + b)
+        // }
+        // msg(15, 25)
+
+        // --------------------------------------------------------------
+
+        // function display(name, callback) {
+        //     document.write("hi" + " " + name + "<br>")
+        //     callback()
+        // }
+
+        // function callme() {
+        //     document.write("I am callback function")
+        // }
+
+        // display("john ", callme)
+
+        // --------------------------------------------------------------
+
+        // let show = function () {
+        //     document.write("hello")
+        // }
+        // show()
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
